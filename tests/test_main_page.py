@@ -11,10 +11,10 @@ class TestMainPage:
     @allure.description('В кейсе проверяется аккордеон меню при клике на элементы и соответствие текста')
     @pytest.mark.parametrize(
         'num, result',
-        Constants.accordion_on_main_page
+        Constants.ACCORDING_ON_MAIN_PAGE
     )
     def test_question_and_answers(self, driver, num, result):
         main_page = MainPage(driver)
-        main_page.go_to_page(driver, Constants.url_main_page)
+        main_page.go_to_page(driver, Constants.URL_MAIN_PAGE)
         main_page.check_question_and_answer(num)
         assert main_page.get_answer_text(num) == result

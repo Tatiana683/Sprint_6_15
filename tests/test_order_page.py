@@ -22,7 +22,7 @@ class TestOrderPage:
     def test_create_order(self, driver, locator, num, text):
         main_page = MainPage(driver)
         order_page = OrderPage(driver)
-        main_page.go_to_page(driver, Constants.url_main_page)
+        main_page.go_to_page(driver, Constants.URL_MAIN_PAGE)
         main_page.scroll_to_element(locator)
         main_page.click_to_element(locator)
         order_page.create_order(num, text)

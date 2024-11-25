@@ -8,15 +8,15 @@ import allure
 class OrderPage(BasePage):
     @allure.step('Заполнение поля "Имя"')
     def filling_field_of_name(self):
-        self.add_text_to_element(OrderLocators.NAME_FIELD, Constants.name)
+        self.add_text_to_element(OrderLocators.NAME_FIELD, Constants.NAME)
 
     @allure.step('Заполнение поля "Фамилия')
     def filling_field_of_surname(self):
-        self.add_text_to_element(OrderLocators.SURNAME_FIELD, Constants.surname)
+        self.add_text_to_element(OrderLocators.SURNAME_FIELD, Constants.SURNAME)
 
     @allure.step('Заполнение поля адреса доставки')
     def filling_field_of_address(self):
-        self.add_text_to_element(OrderLocators.ADDRESS_FIELD, Constants.address)
+        self.add_text_to_element(OrderLocators.ADDRESS_FIELD, Constants.ADDRESS)
 
     @allure.step('Выбор станции метро')
     def choice_of_metro_station(self, num):
@@ -26,7 +26,7 @@ class OrderPage(BasePage):
 
     @allure.step('Ввод номера телефона')
     def filling_field_of_phone(self):
-        self.add_text_to_element(OrderLocators.TELEPHONE_NUMBER_FIELD, Constants.phone)
+        self.add_text_to_element(OrderLocators.TELEPHONE_NUMBER_FIELD, Constants.PHONE)
 
     @allure.step('Нажатие на кнопку перехода на следующий этап')
     def transition_on_next_step(self):
@@ -34,7 +34,7 @@ class OrderPage(BasePage):
 
     @allure.step('Заполнение даты доставки')
     def filling_field_of_date_delivery(self):
-        self.add_text_to_element(OrderLocators.TIME_OF_DELIVERY_FIELD, Constants.date_delivery)
+        self.add_text_to_element(OrderLocators.TIME_OF_DELIVERY_FIELD, Constants.DATE_DELIVERY)
         self.click_Enter(OrderLocators.TIME_OF_DELIVERY_FIELD)
 
     @allure.step('Выбор срока аренды')

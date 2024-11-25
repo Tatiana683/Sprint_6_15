@@ -1,7 +1,7 @@
 class Constants:
-    url_main_page = 'https://qa-scooter.praktikum-services.ru'
-    url_create_order = 'https://qa-scooter.praktikum-services.ru/order'
-    accordion_on_main_page = [
+    URL_MAIN_PAGE = 'https://qa-scooter.praktikum-services.ru'
+    URL_CREATE_ORDER = 'https://qa-scooter.praktikum-services.ru/order'
+    ACCORDING_ON_MAIN_PAGE = [
         (0, 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.'),
         (1,
          'Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать '
@@ -17,8 +17,8 @@ class Constants:
         (6, 'Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.'),
         (7, 'Да, обязательно. Всем самокатов! И Москве, и Московской области.')
     ]
-    name = 'Татьяна'
-    surname = 'Клиновская'
-    address = 'Москва'
-    phone = '78982586347'
-    date_delivery = '20.12.2024'
+    NAME = 'Татьяна'
+    SURNAME = 'Клиновская'
+    ADDRESS = 'Москва'
+    PHONE = '78982586347'
+    DATE_DELIVERY = '20.12.2024'
